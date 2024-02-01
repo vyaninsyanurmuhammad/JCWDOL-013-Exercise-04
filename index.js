@@ -80,3 +80,9 @@ const removeAllOddArray = (list) => {
 }
 
 console.log(removeAllOddArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// Write a function to split a string and convert it into an array of words
+
+const convertToArray = (text) => text.split(" ");
+
+console.log(convertToArray("Hello World"));
