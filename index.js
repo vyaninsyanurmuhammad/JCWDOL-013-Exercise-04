@@ -54,3 +54,19 @@ const fizzBuzz = (n) => {
 }
 
 fizzBuzz(15);
+
+// 3. Create a function to calculate Body Mass Index (BMI)
+
+const calBMI = (weight, height) => {
+    const result = weight / Math.pow(height, 2);
+
+    if (result < 18.5) return "less weight";
+    if (result >= 18.5 && result <= 24.9) return "ideal";
+    if (result >= 25 && result <= 29.9) return "overweight";
+    if (result >= 30 && result <= 39.9) return "very overweight";
+
+    return "obesity";
+
+}
+
+console.log(calBMI(65, 1.3));
