@@ -70,3 +70,13 @@ const calBMI = (weight, height) => {
 }
 
 console.log(calBMI(65, 1.3));
+
+//  4. Write a function to remove all odd numbers in an array and return a new array that contains even numbers only
+
+const removeAllOddArray = (list) => {
+    const result = list.filter((data) => data % 2 === 0);
+
+    return result;
+}
+
+console.log(removeAllOddArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
