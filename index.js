@@ -29,3 +29,28 @@ const triangleByHeight = (height) => {
 }
 
 triangleByHeight(4);
+
+/*
+
+2. Create a function that can loop the number of times according to the input we provide, and will
+replace multiples of 3 with "Fizz", multiples of 5 with "Buzz", multiples of 3 and 5 with
+"FizzBuzz".
+
+*/
+
+const fizzBuzz = (n) => {
+    const result = [];
+
+    for (let i = 1; i <= n; i++) {
+        const output = [];
+
+        if (i % 3 === 0) output.push('Fizz');
+        if (i % 5 === 0) output.push('Buzz');
+
+        result.push(output.length ? output.join('') : i);
+    }
+
+    console.log(result.join(", "));
+}
+
+fizzBuzz(15);
